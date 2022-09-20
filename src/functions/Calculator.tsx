@@ -90,6 +90,7 @@ export default class Calculator {
    }
 
    public addSign(sign: string): void {
+      if(this.currentOperation.length >= 32) return
       if(this.handleFirstOperator(sign)) return
       else if(this.handleDoubleDifferentOperators(sign)) return
 

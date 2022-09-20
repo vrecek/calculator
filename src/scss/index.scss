@@ -15,6 +15,7 @@ body {
    background: rgb(240, 240, 240);
    @include Flex(c, c);
    font-family: 'Lato', sans-serif;
+   user-select: none;
 }
 
 main.calculator {
@@ -67,6 +68,13 @@ main.calculator {
          box-shadow: 3px 3px 3px #151515, -2px -2px 2px #151515;
          border-radius: .25em;
          cursor: pointer;
+         transition: .2s;
+
+         label { 
+            pointer-events: none; 
+            display: block;
+            transition: .2s;
+         }
 
          &.small { 
             aspect-ratio: 1; 

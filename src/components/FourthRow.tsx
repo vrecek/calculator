@@ -5,7 +5,8 @@ const FourthRow = () => {
    return (
       <section className="row fourth">
 
-         <Button type='small' sign='C' />
+         <Button cname='delete' type='small' sign='C' />
+         <Button cname='dot' type='small' sign='.' />
          <Button type='small' sign={0} />
 
       </section>

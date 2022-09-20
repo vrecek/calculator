@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
+  user-select: none;
 }
 
 main.calculator {
@@ -72,6 +73,12 @@ main.calculator section.button-container div.button {
   box-shadow: 3px 3px 3px #151515, -2px -2px 2px #151515;
   border-radius: 0.25em;
   cursor: pointer;
+  transition: 0.2s;
+}
+main.calculator section.button-container div.button label {
+  pointer-events: none;
+  display: block;
+  transition: 0.2s;
 }
 main.calculator section.button-container div.button.small {
   aspect-ratio: 1;

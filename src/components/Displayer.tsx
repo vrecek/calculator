@@ -5,7 +5,7 @@ const Displayer = () => {
       <section className="displayer">
 
          <p className="previous"></p>
-         <p className="current">12 + 12</p>
+         <p className="current"></p>
 
       </section>
    )

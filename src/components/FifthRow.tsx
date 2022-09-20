@@ -5,7 +5,7 @@ const FifthRow = () => {
    return (
       <section className="row fifth">
 
-         <Button type='big_width' sign='=' />
+         <Button cname='equals' type='big_width' sign='=' />
          <Button type='small' sign='/' />
 
       </section>

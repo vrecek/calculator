@@ -1,26 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/Button';
+import Displayer from './components/Displayer';
+import FifthRow from './components/FifthRow';
+import FirstRow from './components/FirstRow';
+import FourthRow from './components/FourthRow';
+import SecondRow from './components/SecondRow';
+import ThirdRow from './components/ThirdRow';
+import './css//index.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   const s = [1,2,3,4,5,6,7,8,9]
+
+   return (
+      <div className="App">
+
+         <main className="calculator">
+
+            <Displayer />
+            
+            <section className="button-container">
+
+               <section className="left">
+
+                  <FirstRow />
+                  <SecondRow />
+                  <ThirdRow />
+                  <FourthRow />
+                  <FifthRow />
+
+               </section>
+
+               <section className="right">
+
+                  <Button type='big_height' sign='+' />
+                  <Button type='big_height' sign='-' />
+                  <Button type='small' sign='*' />
+
+               </section>
+
+            </section>
+
+         </main>
+
+      </div>
+   );
 }
 
 export default App;

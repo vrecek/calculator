@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+div.App {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+main.calculator {
+  width: 425px;
+  height: 650px;
+  background: #303030;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  box-shadow: inset 6px 6px 6px #151515;
+  position: relative;
+}
+main.calculator::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+main.calculator section.displayer {
+  height: 22%;
+  background: green;
+  border-radius: 0.5em;
+  box-shadow: inset 2px 2px 2px #151515, 4px 4px 4px #151515;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+}
+main.calculator section.displayer p {
+  color: rgb(245, 245, 245);
+}
+main.calculator section.displayer p.current {
+  font-size: 2.25rem;
+}
+main.calculator section.displayer p.previous {
+  font-size: 1rem;
+}
+main.calculator section.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+main.calculator section.button-container div.button {
+  background: #202020;
+  color: rgb(225, 225, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  box-shadow: 3px 3px 3px #151515, -2px -2px 2px #151515;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+main.calculator section.button-container div.button.small {
+  aspect-ratio: 1;
+  width: 70px;
+}
+main.calculator section.button-container div.button.big_height {
+  aspect-ratio: 0.5;
+  width: 70px;
+}
+main.calculator section.button-container div.button.big_width {
+  aspect-ratio: 2;
+  height: 70px;
+}
+main.calculator section.button-container section.left {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+}
+main.calculator section.button-container section.left section.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.calculator section.button-container section.left section.row.fourth div.button:nth-child(1) {
+  background: crimson;
+}
+main.calculator section.button-container section.left section.row.fifth div.button:nth-child(1) {
+  background: rgb(57, 93, 201);
+}
+main.calculator section.button-container section.right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+}
